@@ -1,0 +1,114 @@
+.About{
+    width: 100vw;
+    height: 610px;
+    overflow: hidden;
+  position: relative;
+}
+.About-Me-Container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding-left: 100px;
+    gap: 100px;
+}
+
+.about_header{
+    position: relative;
+    width: 100%;
+    height: 200px; /* Adjust as needed */
+    display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.Left-Side{
+    width: 50%;
+    height: 100%;
+    color: gray;
+    position: relative;
+}
+
+.Left-Side img{
+    width: 80%; /* Adjust image width */
+    height: 100%; /* Maintain aspect ratio */
+    position: absolute;
+    margin-top:-75px;
+}
+.right-Side {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 5px;
+    margin-top: 10px;
+}
+.container {
+    width: 100%;
+    height: auto; /* Adjust height as needed */
+     }
+  
+  .background-text {
+    position: relative;
+    font-size: 100px; /* Large background text */
+    color: white;
+  z-index: 1;
+    pointer-events: none; /* Avoid interference */
+    text-transform: capitalize;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+opacity: 0.11;  
+letter-spacing: 3.5px;
+}
+  
+  .foreground-text {
+    position: absolute;
+    font-size: 50px; /* Smaller foreground text */
+    color: white; /* Visible text color */
+    z-index: 2;
+    background: none;
+    text-transform: capitalize;
+    top: 0px;
+    left: 8px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+  }
+
+  .details{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    gap: 10px;
+  }
+  .details-row{
+    display: flex;
+    align-items: center;
+  }
+  .details-row span{
+    color: gray;
+margin-left: 10px;
+font-size: 12px;
+}
+.projects{
+    font-size: 24px;
+}
+.projects span{
+    color: orangered;
+    margin-right: 5px;
+}
+
+.button{
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: black;
+    background-color: orangered;
+    border-radius: 25px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.qoute{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: popping;
+}

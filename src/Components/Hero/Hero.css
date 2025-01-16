@@ -1,0 +1,78 @@
+.hero-carousel{
+    width: 100vw;
+    height: 600px;
+    overflow: hidden;
+  position: relative;
+}
+
+
+.carousel_slide {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    padding-left: 100px;
+    gap: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 2.5s ease-in-out, transform 2.5s ease-in-out;
+}
+.carousel_slide.active{
+    opacity: 1;
+  transform: scale(1);
+  z-index: 2;
+}
+.carousel_slide.inactive{
+    opacity: 0;
+  transform: scale(0.8);
+  ;
+  z-index: 1;
+}
+
+
+.carousel_text {
+    display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    height: 100%;
+    color: white;
+}
+
+
+
+
+.carousel_image {
+    display: flex; /* Optional for alignment within the image container */
+    justify-content: start; /* Center image horizontally */
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.imageSize {
+    width: 80%; /* Adjust image width */
+    height: 600px; /* Maintain aspect ratio */
+    position: absolute;
+    margin-top: -100px;
+}
+
+  
+
+.carousel_text h1{
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;    
+}
+
+.orange {
+    color: orangered;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+}
+
+

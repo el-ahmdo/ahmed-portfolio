@@ -1,0 +1,58 @@
+.header{
+    display: flex;
+    background-color: black;
+    color: aliceblue;
+    height: 120px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.header h1{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    font-family: 'Lobster', cursive;
+    margin-left: 100px;
+}
+ .navigation ul li {
+    list-style: none;
+    display: inline; 
+     height: auto;
+     margin: 0 25px; 
+    cursor: pointer; 
+     font-size: 20px;
+     position: relative;
+  }
+  .navigation ul li.Active{
+    color: orangered;
+  }
+  .navigation ul li.Active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Expand to full width when Active */
+    height: 2px; 
+    background-color: orangered; 
+    transition: width 0.3s ease; /* Smooth width transition */
+  }
+
+
+.navigation ul li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; 
+    height:2px; 
+    background-color: orangered; 
+    transition: width 0.3s ease; 
+  }
+   .navigation ul li:hover::after {
+    width: 100%; 
+
+  }
+  .navigation ul li:hover{
+    color: orangered;
+  }
