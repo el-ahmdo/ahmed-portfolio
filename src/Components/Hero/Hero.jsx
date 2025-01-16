@@ -27,7 +27,7 @@ const Hero = () => {
           <h1>
             <br />
             <span className="orange"> A Frontend developer</span>
-            <br /> based in negeria{" "}
+            <br /> based in nigeria{" "}
           </h1>
         </>
       ),
