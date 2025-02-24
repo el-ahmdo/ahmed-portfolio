@@ -26,8 +26,8 @@ const Hero = () => {
         <>
           <h1>
             <br />
-            <span className="orange"> A Frontend developer</span>
-            <br /> based in nigeria{" "}
+            <span className="orange"> A Frontend Developer</span>
+            <br /> Based in Nigeria
           </h1>
         </>
       ),
@@ -40,29 +40,41 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 4000); // Change every 3 seconds
+    }, 6000); // Change every 4 seconds
 
     return () => clearInterval(interval); // Cleanup interval on unmount
   }, [slides.length]);
 
   return (
     <div className="hero-carousel">
-      {slides.map((slide, index) => (
-        <div
-          key={slide.id}
-          className={`carousel_slide ${
-            index === currentIndex ? "active" : "inactive"
-          }`}
-        >
-          <div className="carousel_text">
+      {/* Left side - Text Changing */}
+      <div className="left-carousel">
+        {slides.map((slide, index) => (
+          <div
+            key={slide.id}
+            className={`carousel-text-slide ${
+              index === currentIndex ? "active" : "inactive"
+            }`}
+          >
             {slide.text}
-            <Button />
           </div>
-          <div className="carousel_image">
-            <img className="imageSize" src={slide.image} alt="" />
-          </div>
-        </div>
-      ))}
+        ))}
+        <Button /> {/* Optional button */}
+      </div>
+
+      {/* Right side - Image Changing */}
+      <div className="right-carousel">
+        {slides.map((slide, index) => (
+          <img
+            key={slide.id}
+            className={`carousel-image ${
+              index === currentIndex ? "active" : "inactive"
+            }`}
+            src={slide.image}
+            alt="Hero Slide"
+          />
+        ))}
+      </div>
     </div>
   );
 };

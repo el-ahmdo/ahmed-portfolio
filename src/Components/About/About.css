@@ -1,30 +1,38 @@
 .About{
-    width: 100vw;
-    height: 610px;
-    overflow: hidden;
-  position: relative;
-}
-.About-Me-Container{
-    display: flex;
-    height: 100%;
     width: 100%;
-    padding-left: 100px;
-    gap: 100px;
+  /* position: relative; */
 }
 
-.about_header{
+
+.About-Me-Container{
+    display: flex;
+min-height: 600px;
+    width: 100%;
+    gap: 100px;
+    padding: 1rem 4rem;
+    overflow: hidden;
+
+
+}
+
+/* .about_header{
     position: relative;
     width: 100%;
-    height: 200px; /* Adjust as needed */
+    height: 200px; 
     display: flex;
   align-items: center;
   justify-content: start;
 }
+ */
+
+
 .Left-Side{
     width: 50%;
-    height: 100%;
+    height: 600px;
     color: gray;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .Left-Side img{
@@ -35,24 +43,25 @@
 }
 .right-Side {
     width: 50%;
-    height: 100%;
+    min-height: 600px;
     display: flex;
     flex-direction: column;
     color: white;
     position: relative;
-    gap: 5px;
+    gap: 10px;
     margin-top: 10px;
 }
-.container {
+
+.hover-text-container {
     width: 100%;
-    height: auto; /* Adjust height as needed */
+    height: auto; 
      }
   
   .background-text {
     position: relative;
     font-size: 100px; /* Large background text */
     color: white;
-  z-index: 1;
+   z-index: 1;
     pointer-events: none; /* Avoid interference */
     text-transform: capitalize;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -77,7 +86,6 @@ letter-spacing: 3.5px;
     display: flex;
     flex-direction: column;
     width: 80%;
-    height: auto;
     gap: 10px;
   }
   .details-row{
@@ -111,4 +119,28 @@ font-size: 12px;
     font-size: 14px;
     font-weight: 700;
     font-family: popping;
+}
+@media (max-width:700px) {
+  .About-Me-Container{
+    flex-direction: column;
+    padding: 0rem .5rem;
+    
+  }
+  .Left-Side{
+    width: 100%;
+    display: none;
+  }
+  .right-Side {
+    width: 100%;
+    min-height: 800px;
+align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  .foreground-text {
+    left: 25%;
+  }
+  .button{
+color: #fff;
+  }
 }

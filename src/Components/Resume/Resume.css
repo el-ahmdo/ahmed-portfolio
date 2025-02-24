@@ -1,0 +1,134 @@
+
+.resume-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+
+  padding: 1rem 4rem;
+}
+
+.backGround-text-con {
+  width: 70%;
+  min-height: 100px;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+   }
+
+  .back-text {
+  position: relative;
+  font-size: 150px; /* Large background text */
+  color: white;
+z-index: 1;
+  pointer-events: none; /* Avoid interference */
+  text-transform: capitalize;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+opacity: 0.11;  
+letter-spacing: 3.5px;
+}
+
+.front-text{
+  font-size: 70px; /* Smaller foreground text */
+  color: white; /* Visible text color */
+  z-index: 2;
+  background: none;
+  text-transform: capitalize;
+  position: absolute;
+  top: 10px;
+  left: 35%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.resume_description{
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  font-family: cursive;
+  font-weight: 500;
+
+}
+
+
+.resume_cards_con{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 350px;
+  gap: 30px;
+  margin-top: 2rem;
+}
+.card{
+  background-color: rgba(42, 41, 41, 0.613);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+text-align: start;
+gap: 10px;
+}
+
+.card h1,h2,h3,p{
+  margin: 0;
+  background: none;
+  overflow: hidden;
+}
+.card h1{
+  color: orangered;
+  font-family: "Anton SC", serif;  font-weight: 800;
+  font-size: 36px;
+}
+.card h2{
+  font-size: 22px;
+
+}
+.card h3{
+  font-size: 20px;
+  font-family: "Anton SC", serif;  font-weight: 800;
+  line-height: 22px;
+  font-weight: 500;
+
+  color: rgba(189, 186, 186, 0.707);
+}
+.card-description{
+  margin-top: .2rem;
+
+}
+.card p{
+  color: rgba(189, 186, 186, 0.707);
+font-size: 24px;
+
+font-weight: 400;
+}
+
+.download_resume_button{
+  width: 250px;
+  background: orangered;
+  color: white;
+  margin: 2rem auto;
+  border-radius: 50px;
+  padding: 10px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+}
+@media (max-width:700px) {
+  .resume-section{
+    padding: .5rem .5rem;
+    margin-top: -130px;
+  }
+  .backGround-text-con {
+    width: 100%;
+
+  }
+
+  .back-text {
+    font-size: 100px;
+  }
+  .front-text{
+    left: 25%;
+  }
+  .resume_cards_con{
+    grid-template-columns: 1fr;
+    grid-auto-rows: 500px;
+    padding: 0rem 0 4rem 0;
+  }
+}

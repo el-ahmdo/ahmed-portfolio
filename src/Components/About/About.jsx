@@ -4,15 +4,15 @@ import ahmdo from "./ahmdo.png";
 
 const About = () => {
   return (
-    <div className="About">
+    <div className="About" id="about">
       <div className="About-Me-Container">
         <div className="Left-Side">
-          <img src={ahmdo} alt="" />
+          <img src={ahmdo} alt="" srcset="" />
         </div>
         <div className="right-Side">
-          <div class="container">
-            <p class="background-text">about</p>
-            <p class="foreground-text">about me</p>
+          <div className="hover-text-container">
+            <p className="background-text">about</p>
+            <p className="foreground-text">about me</p>
           </div>
           <div className="qoute">
             <p>

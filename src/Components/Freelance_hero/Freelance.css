@@ -1,0 +1,140 @@
+.freelance_hero_section{
+    width: 100%;
+    min-height: 400px;
+    padding: 12rem 4rem;
+    position: relative;
+    margin-top: 40px;
+}
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 5px rgba(213, 201, 201, 0.827);
+}
+
+/* Background Image */
+
+
+/* Content Container */
+.hero-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background: none;
+    justify-content: center;
+    color: white;
+    position: absolute; /* Places content on top of the image */
+    top: 0;
+    left: 0;
+    transform: translate(-10%, 20%); /* Centers the content */
+
+}
+
+/* Button */
+.hero-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background:bisque;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: "Anton SC", serif;  font-weight: 800;
+    color:rgba(208, 60, 6, 0.937) ;
+    border-radius: 10px;
+
+}
+
+.hero-btn:hover {
+    background-color:rgba(208, 60, 6, 0.937) ;
+    color: bisque;
+}
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:40% 60%;
+}
+.hero-content h2{
+    color: bisque;
+    font-size: 50px;
+    font-family: "Anton SC", serif;  font-weight: 800;
+
+}
+
+.yellow{
+    background: none;
+    color:rgba(208, 60, 6, 0.937) ;
+    font-size: 70px;
+    font-weight: 500;
+}
+.freelance-stats{
+    padding: 0px 4rem;
+    width: 100%;
+    display: flex;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    bottom: 85%;
+    background: none;
+    justify-content: space-around;  
+}
+  .stat{
+  width: 18%;   
+  border-radius: 10px;
+  background-color: rgba(42, 41, 41, 0.927);
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  }
+  .stat_content{
+    width: 100%;
+background: none;
+text-align: center;
+  }
+
+  .stat_content h2{
+    color: rgba(219, 65, 9, 0.99);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 1.5rem;
+padding: .5rem;
+  }
+
+  .stat_content p{
+    font-family: "Anton SC", serif;  font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+    color: #fff;
+  }
+
+  @media (max-width:700px) {
+    
+    .freelance_hero_section{
+        padding: 10rem .5rem 0rem .5rem;
+        
+    }
+
+    .freelance-stats{
+        padding: 0;
+        justify-content: space-between;
+
+    }
+    .stat{
+width:24% ;
+    }
+    .stat_content h2{
+    font-size: .9rem;
+    }
+    .hero-content {
+        left: 100px;
+    }
+  }

@@ -1,0 +1,89 @@
+
+
+.Project-section-con {
+    width: 100%;
+    padding: 2rem 4rem;
+    color: aliceblue;
+    width: 100%;
+    min-height: 400px;
+    padding: 1rem 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 50px;
+    margin-top: 4rem;
+}
+
+
+/* Grid Item */
+.grid-item {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Span Items */
+.span-2 {
+    grid-column: span 2; /* Make it span 2 columns */
+
+}
+
+/* Image */
+.imageFit {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Hover Banner */
+.hover-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(228, 67, 8, 0.614);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.grid-item:hover .imageFit {
+    opacity: 0.5;
+}
+
+
+.grid-item:hover .hover-banner {
+    opacity: 1;
+}
+
+.span-1 img{
+    object-fit: fill;}
+
+    @media (max-width:700px) {
+        .Project-section-con {
+        
+            padding: 1rem .4rem;
+        
+        }
+
+        .projects-grid {
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
