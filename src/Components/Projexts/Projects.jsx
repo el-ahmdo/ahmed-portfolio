@@ -34,7 +34,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-      <div className="download_resume_button">Download Cv</div>
+      <div className="download_resume_button projects"> More</div>
     </section>
   );
 };

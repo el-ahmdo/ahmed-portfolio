@@ -50,7 +50,7 @@ function Navbar() {
             onClick={() => handleClick("skills")}
             className={activeItem === "skills" ? "Active" : ""}
           >
-            <a href="#skills">Skills</a>
+            <a href="#skill">Skills</a>
           </li>
           <li
             onClick={() => handleClick("projects")}

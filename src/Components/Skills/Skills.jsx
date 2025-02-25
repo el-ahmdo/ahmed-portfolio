@@ -13,7 +13,7 @@ const skillsData = [
   { name: "canvas", proficiency: "80%" },
   { name: "microsoft office", proficiency: "90%" },
   { name: "capcut", proficiency: "70%" },
-  { name: "powerApps", proficiency: "30%" },
+  { name: "Git", proficiency: "50%" },
 ];
 
 const Skills = () => {
