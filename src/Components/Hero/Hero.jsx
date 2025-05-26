@@ -46,7 +46,7 @@ const Hero = () => {
   }, [slides.length]);
 
   return (
-    <div className="hero-carousel">
+    <div className="hero-carousel" >
       {/* Left side - Text Changing */}
       <div className="left-carousel">
         {slides.map((slide, index) => (

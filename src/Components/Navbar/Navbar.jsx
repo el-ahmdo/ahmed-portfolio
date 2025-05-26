@@ -24,45 +24,43 @@ function Navbar() {
         <ul>
           <li
             onClick={() => handleClick("home")}
-            className={activeItem === "home" ? "Active" : ""}
-          >
+            className={activeItem === "home" ? "Active" : ""}>
             <a href="#home">Home</a>
           </li>
           <li
             onClick={() => handleClick("about")}
-            className={activeItem === "about" ? "Active" : ""}
-          >
+            className={activeItem === "about" ? "Active" : ""}>
             <a href="#about">About</a>
           </li>
           <li
             onClick={() => handleClick("resume")}
-            className={activeItem === "resume" ? "Active" : ""}
-          >
+            className={activeItem === "resume" ? "Active" : ""}>
             <a href="#resume">Resume</a>
           </li>
           <li
             onClick={() => handleClick("services")}
-            className={activeItem === "services" ? "Active" : ""}
-          >
+            className={activeItem === "services" ? "Active" : ""}>
             <a href="#services">Services</a>
           </li>
           <li
             onClick={() => handleClick("skills")}
-            className={activeItem === "skills" ? "Active" : ""}
-          >
+            className={activeItem === "skills" ? "Active" : ""}>
             <a href="#skill">Skills</a>
           </li>
           <li
             onClick={() => handleClick("projects")}
-            className={activeItem === "projects" ? "Active" : ""}
-          >
+            className={activeItem === "projects" ? "Active" : ""}>
             <a href="#projects">Projects</a>
           </li>
           <li
             onClick={() => handleClick("contacts")}
-            className={activeItem === "contacts" ? "Active" : ""}
-          >
+            className={activeItem === "contacts" ? "Active" : ""}>
             <a href="#contacts">Contacts</a>
+          </li>
+          <li
+            onClick={() => handleClick("portfolio")}
+            className={activeItem === "portfolio" ? "Active" : ""}>
+            <a href="#contacts">portfolio</a>
           </li>
         </ul>
       </nav>

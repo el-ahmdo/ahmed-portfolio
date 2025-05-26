@@ -1,0 +1,25 @@
+.port-container {
+  width: 100%;
+  min-height: 500px;
+}
+h2 {
+  color: white;
+
+  text-align: center;
+}
+
+.Alx {
+  width: 100%;
+  min-height: 300px;
+}
+
+.pitch {
+  width: 100%;
+  min-height: 300px;
+}
+
+.video-center {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}

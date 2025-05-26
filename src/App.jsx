@@ -10,6 +10,7 @@ import Projects from "./Components/Projexts/Projects";
 import Freelance from "./Components/Freelance_hero/Freelance";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
+import Portfolio from "./Components/Portfolio/Portfolio";
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
       <Skills />
       <Projects />
       <Freelance />
+      <Portfolio />
       <Contact />
       <Footer />
     </>
